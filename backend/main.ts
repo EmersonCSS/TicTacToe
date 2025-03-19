@@ -1,5 +1,6 @@
-import { app, BrowserWindow, Menu } from 'electron';
+import { app, BrowserWindow, ipcMain, Menu } from 'electron';
 import * as path from 'path';
+//import { cleanGame } from './game/game';
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
@@ -8,7 +9,7 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,
-      //preload: path.join(__dirname, 'preload.js') // optional
+      preload: path.join(__dirname, 'preload.ts') // optional
     },
   });
 
@@ -25,3 +26,5 @@ app.whenReady().then(createWindow);
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });
+
+

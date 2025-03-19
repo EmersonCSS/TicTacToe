@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../index.css';
+import { cleanGame } from '../../../backend/game/game'
 
 export default function Home() {
     return (
@@ -10,21 +11,21 @@ export default function Home() {
 
             <div className="flex flex-col pt-10 space-y-6">
                 <div className="flex space-x-6">
-                    <button className="size-28 !bg-white !text-black">A</button>
-                    <button className="size-28 !bg-white !text-black">B</button>
-                    <button className="size-28 !bg-white !text-black">C</button>
+                    <button className="size-28 !bg-white !text-black"></button>
+                    <button className="size-28 !bg-white !text-black"></button>
+                    <button className="size-28 !bg-white !text-black"></button>
                 </div>
 
                 <div className="flex space-x-6">
-                    <button className="size-28 !bg-white !text-black">A</button>
-                    <button className="size-28 !bg-white !text-black">B</button>
-                    <button className="size-28 !bg-white !text-black">C</button>
+                    <button className="size-28 !bg-white !text-black"></button>
+                    <button className="size-28 !bg-white !text-black"></button>
+                    <button className="size-28 !bg-white !text-black"></button>
                 </div>
 
                 <div className="flex space-x-6">
-                    <button className="size-28 !bg-white !text-black">A</button>
-                    <button className="size-28 !bg-white !text-black">B</button>
-                    <button className="size-28 !bg-white !text-black">C</button>
+                    <button className="size-28 !bg-white !text-black"></button>
+                    <button className="size-28 !bg-white !text-black"></button>
+                    <button className="size-28 !bg-white !text-black"></button>
                 </div>
                 
             </div>

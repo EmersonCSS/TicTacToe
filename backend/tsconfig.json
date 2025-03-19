@@ -7,5 +7,5 @@
       "esModuleInterop": true,
       "sourceMap": true
     },
-    "include": ["./**/*.ts"]
+    "include": ["./**/*.ts", "preload.js"]
   }
