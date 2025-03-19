@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import '../index.css';
-import { cleanGame } from '../../../backend/game/game'
 
 export default function Home() {
     return (
